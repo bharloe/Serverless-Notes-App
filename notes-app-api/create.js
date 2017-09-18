@@ -11,7 +11,7 @@ export async function main(event, context, callback) {
       noteid: uuid.v1(),
       content: data.content,
       attachment: data.attachment,
-      createdAt: new Date().getTime(),
+      createdAt: new Date().getTime()
     },
   };
 

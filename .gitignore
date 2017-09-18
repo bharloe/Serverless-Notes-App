@@ -5,3 +5,4 @@ notes
 
 # Serverless directories
 .serverless
+.webpack
