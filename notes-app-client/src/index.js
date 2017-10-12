@@ -5,8 +5,6 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import "./index.css";
 
-test
-
 ReactDOM.render(
   <Router>
     <App />
