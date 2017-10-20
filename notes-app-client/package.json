@@ -16,6 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "aws s3 sync build/ s3://ben-notes-app-client",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id E2BDBW1BUFAX6O --paths '/*' && aws cloudfront create-invalidation --distribution-id E1LL8LHHVBEPG9 --paths '/*'",
     "eject": "react-scripts eject"
   }
 }
